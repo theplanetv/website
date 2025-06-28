@@ -1,0 +1,9 @@
+<div class="navbar bg-base-100 shadow-sm">
+  <div class="navbar-start">
+    <a href="/blogs" class="btn btn-ghost text-md">Blogs</a>
+  </div>
+  <div class="navbar-center">
+    <a href="/" class="btn btn-ghost text-xl">PlanetV</a>
+  </div>
+  <div class="navbar-end"></div>
+</div>
