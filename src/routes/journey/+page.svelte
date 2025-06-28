@@ -6,7 +6,7 @@
 <Menu />
 
 <div class="flex flex-col py-6 gap-y-6">
-  <h1 class="text-2xl text-center">Blogs</h1>
+  <h1 class="text-2xl text-center">Journey</h1>
 
   <p class="text-center">Stay tune!</p>
 </div>
