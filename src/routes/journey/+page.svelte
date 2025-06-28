@@ -1,6 +1,6 @@
 <script lang="ts">
-	import Footer from "../../components/Footer.svelte";
-	import Menu from "../../components/Menu.svelte";
+  import Footer from '../../components/Footer.svelte';
+  import Menu from '../../components/Menu.svelte';
 </script>
 
 <Menu />
