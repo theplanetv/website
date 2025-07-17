@@ -1,18 +1,19 @@
 <script lang="ts">
-  import type { MenuData } from '$lib/types';
-
   import Footer from '../components/Footer.svelte';
-  import Menu from '../components/Menu.svelte';
+  import Layout from '../components/Layout.svelte';
+  import MenuSidebar from '../components/MenuSidebar.svelte';
 
-  let { data }: { data: MenuData } = $props();
+  export let data;
+  let { menuData, profile } = data;
 </script>
 
-<Menu menuData={data} />
+<Layout>
+  <MenuSidebar menuData={menuData} profile={profile} />
 
-<div class="flex flex-col py-6 gap-y-6">
-  <h1 class="text-2xl text-center">PlanetV</h1>
-
-  <p class="text-center">Welcome to my planet!</p>
-</div>
+  <div class="flex flex-col mx-50 py-6 gap-y-6">
+    <h1 class="text-2xl text-center">PlanetV</h1>
+    <p class="text-center">Welcome to my planet!</p>
+  </div>
+</Layout>
 
 <Footer />
