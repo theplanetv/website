@@ -4,11 +4,11 @@
   import MenuSidebar from '../../components/MenuSidebar.svelte';
 
   export let data;
-  let { menuData, profile } = data;
+  let { menuData } = data;
 </script>
 
 <Layout>
-  <MenuSidebar menuData={menuData} profile={profile} />
+  <MenuSidebar {menuData} />
 
   <div class="flex flex-col mx-50 py-6 gap-y-6">
     <h1 class="text-2xl text-center">Journey</h1>

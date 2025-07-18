@@ -8,6 +8,6 @@ export const getUserGithubProfile = async () => {
     return data;
   } catch (error) {
     console.error('Error fetching GitHub profile:', error);
-    return null;  // Return null or a default object to avoid breaking the page
+    return null; // Return null or a default object to avoid breaking the page
   }
-}
+};
