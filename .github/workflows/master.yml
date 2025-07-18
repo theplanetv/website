@@ -8,21 +8,23 @@ on:
 jobs:
   enter-nix-flake-shell:
     name: Enter nix flake shell
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
 
     steps:
       - name: Check out repository code
         uses: actions/checkout@v4
 
       - name: Setup nix
-        uses: cachix/install-nix-action@31
+        uses: cachix/install-nix-action@v31
+        with:
+          nix_path: nixpkgs=channel:nixos-unstable
 
       - name: Enter nix devShell flake
         run: nix develop .
 
   build-push-docker:
     name: Build docker container
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
     permissions:
       contents: read
       packages: write
