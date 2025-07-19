@@ -2,6 +2,6 @@
   let { children }: { children: any } = $props();
 </script>
 
-<div class="flex w-2/4 h-full mx-auto">
+<div class="mx-auto py-10 w-2/4">
   {@render children()}
 </div>

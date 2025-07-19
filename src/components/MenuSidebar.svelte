@@ -11,7 +11,7 @@
   <div class="navbar-start">
     <a
       href="/journey"
-      class={menuData.currentPage === '/journey'
+      class={menuData.currentPage.startsWith('/journey')
         ? 'btn btn-primary text-md'
         : 'btn btn-ghost text-md'}><IonicBookOutline /> Journey</a
     >
