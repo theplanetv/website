@@ -10,18 +10,21 @@
 <div class="navbar bg-base-100 shadow-sm fit-content">
   <div class="navbar-start">
     <a
+      href="/journey"
+      class={menuData.currentPage === '/journey'
+        ? 'btn btn-primary text-md'
+        : 'btn btn-ghost text-md'}><IonicBookOutline /> Journey</a
+    >
+  </div>
+
+  <div class="navbar-center">
+    <a
       href="/"
       class={menuData.currentPage === '/' ? 'btn btn-primary text-xl' : 'btn btn-ghost text-xl'}
       ><IonicPlanetOutline /> PlanetV</a
     >
   </div>
 
-  <div class="navbar-center">
-    <a
-      href="/journey"
-      class={menuData.currentPage === '/journey'
-        ? 'btn btn-primary text-md'
-        : 'btn btn-ghost text-md'}><IonicBookOutline /> Journey</a
-    >
+  <div class="navbar-end">
   </div>
 </div>
