@@ -1,0 +1,11 @@
+
+.env
+.gitignore
+.npmrc
+.prettierrc
+build/
+docker-compose.yml
+Dockerfile
+flake.nix
+flake.lock
+README.module
